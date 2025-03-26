@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<!-- ♥ Esse recadinho, aqui dentro desse código, é o meu jeitinho de dizer
+que te amo, e que estar com você me inspira, me faz ter sede de aprender
+coisas que eu jamais aprenderia se não fosse sua influência. Obrigada por
+me mostrar que ao seu lado eu posso sempre mais! ♥ --!>
+
+<html lang="en">
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Para Vinícius ...</title>
+  <title>Áudio Autoplay</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color-font: #000;
+      text-align: center;
+      background: url(https://previews.dropbox.com/p/thumb/ACnAGJgDB4ZbflkH-oy6nfB0f9EG4WNbm30RMyj0cr60sCG4vhqzAfvsAHSQlAk24bhSa9gmJokUKzcED6Fopoct5pIrcDRplotktKBCqCvH7X5fm0e96-lzSRlvUE0GyK2Y1mGfrkd0iqwCDMj-2YrisSqyjcEKWo689pr0hxfhqlwWEjUoYIkI_gWXpvpZppFrF1-fGgdus6KhnNms_I2ZtBLOn-T5ImLtdW6E8Gd9PwRus9Xn3QknOF_S5xPvf3vMOUmBFlfuDkeNaff3206AymkzAWHl3FRRUasGYyrK6Yzg8HRgcnK30bGxdxMQnAY/p.png) #fff; }
+    }
+    .carousel {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 05px;
+    
+    }
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-inner img {
+      width: 100%;
+      border-radius: 10px;
+      border: 3px solid #fff;
+      margin-top: 20px;
+      
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 24px;
+      font-family: "Pinyon Script", cursive;
+    }
+
+    .counter {
+      margin-top: 35px;
+      font-size: 14px;
+    }
+    .hearts {
+      font-size: 12px;
+      color: white;
+    }
+    audio {
+      margin-top: 20px;
+    }
+
+  ::-moz-selection
+   {color: #fff;
+   background: #CDB38B;}
+
+  ::selection
+   {color: #fff;
+   background: #CDB38B;}
+
+  </style>
+</head>
+<body>
+  
+  <!-- Carousel -->
+  <div class="carousel">
+    <div class="carousel-inner" id="carousel-inner">
+      <img src="https://previews.dropbox.com/p/thumb/ACnjMzoyqOnDrLuPps5djXPYxJ75cXtIMAqgeKlPlGKI-zA9rQ5AHfUQdDXNn5Zo2SqB7jR-YAf05AiqoIS1aX-VWEO-TYEmSrYI2pd4F1gph_V1imC77x_MVgHcwsHd29jn3SYwiiq7YkkrGpnXzYgVPPLNUSupjOGca7gxR_4TBPv1_bcZqhlf0Tntw_MhtVf5FRR6Sen8SDf-e8xLeGean_kAgWDf1hVPkZ-LCe8U084j-p4tyce2YUqYxN078uZtlUGEE_qvCYYroy62PumuG8VmOVL6-hPUdHFxkAKCFBnGLFaPR-vVbSzGRVeb7jpUczzSkUV4iq4vdttpV72f/p.jpeg" alt="Julia e Vinicius 01">
+      <img src="https://previews.dropbox.com/p/thumb/ACnNJX1dKil7d9vwYeb3KU0aqO02pkzgVUfFSu0GbQB9ZArmODxEypMg476iHq-EsYiy9Uguh_LqNaaxMzjQcd8qD-qiZEJqR1WY9r_BfL2-GKz5wdCxMMLkIke1kuxywlkJDz5llwovM1jk-OdrJQXAgKeCMHBUL0Hmb3_EdIAI3JmozVt_TmBRYGCltsy68PLNFiCU5RT-VLkL4TMaRGYUoK8TqWnZxajBrswEOFpFvU8s4s9RYYuIG0T8R3pazfBeWMWlDIDKsyc_KnXLpT29pLmz-JwjM9eTgclKvBugaizZyAZQ-n5bD9frG6P2dumRshJMzLwQcipilcN14ukG/p.jpeg" alt="Julia e Vinicius 02">
+      <img src="https://previews.dropbox.com/p/thumb/ACnIDYQVBInByURdqx15z4A_53KcubreE_672iWmjMfTDFbvx-APC5rQkR1X0_L3yL8Z9M7uvGElzGA72sdstGxpTcy5iWRgG9bwQ9W25e8k00cYAJ6xDp6yys2UbiIfihjpi8T0g1sui9O5FQlt5nrH6DkLubCK-UFypMTIorGWfYkwzGMalPtBoCoXH-STpQgEoaOruFUlVR5eaJFuif1ChdLuIMGEVBli3mYea83En8VomUZ16qWD0T-XmDyVe1uwzyNjuTjk1XgKP2YgBs3GbUJ7rUjKH6H5h6fmfMlQ1GHYNfOs9jaDKB3SVf7Gov4juPIr3usclmxfEaTrAlhE/p.jpeg" alt="Julia e Vinicius 03">
+     </div>
+  </div>
+
+  <!-- Message -->
+  <div class="message" id="message">______</div>
+  <div class="message" id="message">"Ao encontrar um amor a gente não encontra a parte que faltava até então, a gente encontra a metade que fará falta a partir dali."</div>
+<br>SUY.Ana</br>
+  <div class="message" id="message">______</div>
+
+  <!-- Counter -->
+  <div class="counter" id="counter"></div>
+
+  <!-- Hearts -->
+  <div class="hearts">❤️❤️❤️</div>
+
+<audio id="myAudio" controls>
+    <source src=https://www.dropbox.com/scl/fi/3pzlued9j9yz3i4cb3wy7/voc-me-faz-t-o-bem.mp3?rlkey=ajv9nkxwx5ib9otlfpnsjjhlr&st=ut024ytu&dl=0" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+<script>
+  // Carousel functionality
+  let currentIndex = 0;
+  const carouselInner = document.getElementById('carousel-inner');
+  
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % carouselInner.children.length;
+    carouselInner.style.transform = `translateX(-${currentIndex * carouselInner.offsetWidth}px)`;
+  }, 3000);
+
+  // Countdown timer
+  const previousDate = new Date('2024-01-20T00:00:00'); // Data anterior
+  const counter = document.getElementById('counter');
+
+  function updateCounter() {
+    const now = new Date();
+    const diff = now - previousDate;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    counter.textContent = `Feliz por ter encontrado você há exatos ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos.`;
+  }
+
+  setInterval(updateCounter, 1000);
+</script>
+
+<footer id='footer-copyright'>
+<div class='container'>
+<p> Essa mini página foi criada pela Julia  <i class='fa fa-heart'></i>
+</div>
+</footer>
+
+</body>
+</html>
